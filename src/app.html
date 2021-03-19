@@ -1,0 +1,7 @@
+<template>
+	<template for:each={itemToDisplay} for:item="item">
+		<c-child key={item.Id} name={item.Name}></c-child>
+	</template>
+
+	<button onclick={_addNextSet}>Add next set</button>
+</template>
